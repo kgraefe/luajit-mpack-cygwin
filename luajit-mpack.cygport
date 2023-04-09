@@ -10,7 +10,7 @@ SRC_URI="https://github.com/libmpack/libmpack-lua/releases/download/${VERSION}/l
 SRC_DIR="libmpack-lua-${VERSION}"
 
 DEPEND="luajit"
-BUILD_REQUIRES="pkg-config"
+BUILD_REQUIRES="pkg-config luajit luajit-devel"
 
 src_compile() {
 	#lndirs
